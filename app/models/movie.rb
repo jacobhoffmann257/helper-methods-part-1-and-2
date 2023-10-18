@@ -1,7 +1,7 @@
 # == Schema Information
 #
 # Table name: movies
-#
+#;
 #  id          :bigint           not null, primary key
 #  description :text
 #  title       :string
@@ -10,4 +10,5 @@
 #
 class Movie < ApplicationRecord
   validates :title, presence: true
+  validates :description, presence: true
 end
